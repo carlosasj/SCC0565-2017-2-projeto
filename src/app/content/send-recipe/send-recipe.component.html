@@ -4,6 +4,8 @@
                 <h5>Incluir Receita</h5>
                 <hr>
                 <form action="">
+                    <h6>Informações</h6>
+                    <hr>
                     <div class="form-group row">
                         <label for="author" class="col-sm-2 col-md-3 col-form-label">Autor</label>
                         <div class="col-sm-10 col-md-9">
@@ -13,7 +15,7 @@
                     <div class="form-group row">
                         <label for="recipe-name" class="col-sm-2 col-md-3 col-form-label">Nome da receita</label>
                         <div class="col-sm-10 col-md-9">
-                            <input type="text" class="form-control" id="recipe-name"  required>
+                            <input type="text" class="form-control" id="recipe-name" placeholder="Ex: Frango assado da vovó" required>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -32,31 +34,60 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="phone" class="col-sm-2 col-md-3 col-form-label">Telefone</label>
+                        <label for="ready-in-time" class="col-sm-2 col-md-3 col-form-label">Tempo de Preparo (em minutos)</label>
                         <div class="col-sm-10 col-md-9">
-                            <input type="text" class="form-control" id="phone" placeholder="(XX) XXXX-XXXX" required>
+                            <input type="number" class="form-control" id="ready-in-time" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="email" class="col-sm-2 col-md-3 col-form-label">E-mail</label>
+                        <label for="portions-number" class="col-sm-2 col-md-3 col-form-label">Número de Porções</label>
                         <div class="col-sm-10 col-md-9">
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="number" class="form-control" id="portions-number" required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="password" class="col-sm-2 col-md-3 col-form-label">Senha</label>
+                        <label for="cooking-method" class="col-sm-2 col-md-3 col-form-label">Método de Cozimento</label>
                         <div class="col-sm-10 col-md-9">
-                            <input type="password" class="form-control" id="password" required>
+                            <input type="text" class="form-control" id="cooking-method" placeholder="Cozido, Frito, etc." required>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="password-verification" class="col-sm-2 col-md-3 col-form-label">Confirmação de senha</label>
+                        <label for="nutritional-info" class="col-sm-2 col-md-3 col-form-label">Valor Nutricional</label>
                         <div class="col-sm-10 col-md-9">
-                            <input type="password" class="form-control" id="password-verification" required>
+                            <input type="text" class="form-control" id="nutritional-info" placeholder="Ex: 100kcal" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="images">Fotos</label>
+                        <input type="file" class="form-control-file" id="images" accept="image/*" multiple>
+                    </div>
+
+                    <h6>Ingredientes</h6>
+                    <hr>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Ingrediente">
+                        </div>
+                        <div class="col-2">
+                            <input type="number" class="form-control" placeholder="Quantidade">
+                        </div>
+                        <div class="col-3">
+                            <input type="text" class="form-control" placeholder="Unidade">
+                        </div>
+                        <div class="col-1">
+                            <button type="button" class="btn btn-outline-primary">+</button>
+                        </div>
+                    </div>
+                    
+                    <h6>Instruções de Preparo</h6>
+                    <hr>
+                    <div class="form-group row">
+                        <div class="col-sm-10 col-md-9">
+                            <textarea class="form-control" id="instructions" rows="10" required></textarea>
                         </div>
                     </div>
                     <div class="float-right clearfix">
-                        <button type="button" class="btn btn-primary">Cadastrar</button>
+                        <button type="button" class="btn btn-primary">Cadastrar receita</button>
                     </div>
                 </form>
             </div>
