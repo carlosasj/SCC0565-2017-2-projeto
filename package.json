@@ -5,11 +5,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-
     "build": "echo \"Por favor, selecione um ambiente\"",
     "build:local": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build",
     "build:prod": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --prod -e prod",
-
     "lint": "ng lint"
   },
   "private": true,
@@ -26,6 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.5",
     "bootstrap": "4.0.0-beta",
     "core-js": "^2.4.1",
+    "moment": "^2.18.1",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },

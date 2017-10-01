@@ -1,0 +1,9 @@
+<div class="card mb-2">
+  <div class="card-img-top card-img-top-placeholder" [style.background-image]="'url('+img+')'"></div>
+  <!-- <img class="card-img-top" src="{{img}}"> -->
+  <div class="card-body">
+    <h4 class="card-title">{{recipeTitle}}</h4>
+    <p class="card-text">{{abstract}}</p>
+    <p class="card-text"><small class="text-muted">Enviado <span title="{{submitDate | moment:'DD [de] MMMM [de] YYYY [às] HH:mm'}}">{{submitDate | fromNow}}</span></small></p>
+  </div>
+</div>
