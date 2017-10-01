@@ -2,3 +2,11 @@
 @import "./stylesheets/variables/variables";
 @import "~bootstrap/scss/bootstrap.scss";
 @import "./stylesheets/overrides/overrides";
+
+.page-panel {
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    padding: 1.25rem;
+    display: flow-root;
+}

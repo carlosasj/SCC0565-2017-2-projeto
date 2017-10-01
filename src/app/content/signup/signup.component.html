@@ -1,0 +1,64 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-panel">
+            <h5>Cadastro</h5>
+            <hr>
+            <form action="">
+                <div class="form-group row">
+                    <label for="fullName" class="col-sm-2 col-md-3 col-form-label">Nome Completo</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="text" class="form-control uppercase" id="fullName" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="birthdate" class="col-sm-2 col-md-3 col-form-label">Data de Nascimento</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="text" class="form-control" id="birthdate" placeholder="__/__/__" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="city" class="col-sm-2 col-md-3 col-form-label">Cidade</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="text" class="form-control uppercase" id="city" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="state" class="col-sm-2 col-md-3 col-form-label">Estado</label>
+                    <div class="col-sm-10 col-md-9">
+                        <select class="custom-select" id="state" required>
+                            <option selected>Estado</option>
+                            <option *ngFor="let state of states" [value]="state.name">{{state.name}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="phone" class="col-sm-2 col-md-3 col-form-label">Telefone</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="text" class="form-control" id="phone" placeholder="(XX) XXXX-XXXX" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-md-3 col-form-label">E-mail</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="password" class="col-sm-2 col-md-3 col-form-label">Senha</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="password-verification" class="col-sm-2 col-md-3 col-form-label">Confirmação de senha</label>
+                    <div class="col-sm-10 col-md-9">
+                        <input type="password" class="form-control" id="password-verification" required>
+                    </div>
+                </div>
+                <div class="float-right clearfix">
+                    <button type="button" class="btn btn-primary">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

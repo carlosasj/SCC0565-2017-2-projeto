@@ -14,6 +14,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { LoginComponent } from './login/login.component';
 import { SendRecipeComponent } from './send-recipe/send-recipe.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ import { SearchResultsComponent } from './search-results/search-results.componen
     LoginComponent,
     SendRecipeComponent,
     SearchResultsComponent,
+    SignupComponent,
   ],
   exports: [
     ContentComponent,
