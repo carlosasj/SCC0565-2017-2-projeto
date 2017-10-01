@@ -1,19 +1,38 @@
 # Projeto Web SCC0565
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
+**Grupo 10**
 
-## Development server
+* 9167910 - Carlos Alberto Schneider Junior
+* 8517032 - Lais Helena Chiachio de Miranda
+* 7573187 - Rafael Hiroki de Figueiroa Minami
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 1.4.3.
+
+## Dependências globais
+
+Para executar este projeto você precisa ter:
+
+* [Node.js](https://nodejs.org/en/) versão 8 ou superior (v8.5.0 recomendado)
+* NPM versão 5 ou superior (v5.3.0)
+* [Yarn](https://yarnpkg.com/lang/en/) versão 0.1.0 ou superior (v1.1.0 recomendado)
+* (opcional) [Angular CLI](https://github.com/angular/angular-cli) versão 1.4.4 ou superior (se você não quiser instalar este pacote globalmente, basta substituir os comandos que começam com `ng` por `npm run ng`)
+
+## Dependências locais
+
+Use `yarn install` para instalar todas as dependências do projeto
+
+## Servidor de Desenvolvimento
+
+Use `ng serve` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. A página irá se atualizar automaticamente se você modificar algum dor arquivos do projeto.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Use `ng generate component component-name` para gerar um novo componente. Você também pode usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Build/Compilação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Use `npm run build:local` para compilar o projeto. Os arquivos compilados ficarão armazenados no diretório `dist/`. Use `npm run build:prod` para a compilação que irá para produção.
 
-## Further help
+## Ajuda
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para mais informações sobre o Angular CLI use `ng help` ou visite o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
