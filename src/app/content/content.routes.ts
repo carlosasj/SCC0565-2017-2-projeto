@@ -6,6 +6,7 @@ import { SendRecipeComponent } from './send-recipe/send-recipe.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ContentComponent } from './content.component';
 import { HomeComponent } from './home/home.component';
+import { SignupComponent } from './signup/signup.component';
 
 export const appRoutes: Routes = [
   {
@@ -31,6 +32,10 @@ export const appRoutes: Routes = [
       {
         path: 'pesquisa',
         component: SearchResultsComponent,
+      },
+      {
+        path: 'cadastro',
+        component: SignupComponent,
       }
     ]
   },
