@@ -1,9 +1,16 @@
 body {
   background-color: #FFF8F0;
-}
 
-main {
-  margin-top: 76px;
+  > app-root > ng-component {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    min-height: calc( 100vh - 56px);
+
+    main {
+      flex: 1 0 auto;
+    }
+  }
 }
 
 .container-fluid {
