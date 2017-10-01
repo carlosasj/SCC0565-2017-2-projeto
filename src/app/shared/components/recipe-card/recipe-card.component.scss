@@ -1,0 +1,17 @@
+.card-img-top-placeholder {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+  &:before {
+    content: "";
+    float: left;
+    padding-bottom: 40%;
+  }
+
+  :after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

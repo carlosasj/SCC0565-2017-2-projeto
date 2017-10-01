@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary">
-  <a class="navbar-brand" href="#">Vida de Rosquinha</a>
+  <a class="navbar-brand" routerLink="">
+    <img src="../../../../assets/rosquinha.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Quero Rosquinha
+  </a>
   <button class="navbar-toggler d-xl-none d-lg-none"
           type="button"
           (click)="isCollapsed = !isCollapsed"
@@ -11,9 +14,6 @@
   </button>
   <div class="navbar-collapse" id="collapseMenu" [ngbCollapse]="isCollapsed">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="" routerLinkActive="active">Home</a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/categorias" routerLinkActive="active">Categorias</a>
       </li>
@@ -27,7 +27,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" (ngSubmit)="onSearch()">
-      <div class="input-group mr-sm-2">
+      <div class="input-group">
         <input class="form-control" type="text" name="search" id="search" [(ngModel)]="query" placeholder="Pesquisar" aria-label="Pesquisar">
         <span class="input-group-btn">
           <button class="btn btn-secondary icon-inside" type="submit"><i class="material-icons">search</i></button>

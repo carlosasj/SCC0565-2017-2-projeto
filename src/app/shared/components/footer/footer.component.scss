@@ -1,0 +1,16 @@
+@import "../../../../stylesheets/variables/color";
+
+footer {
+  border-top: 1px solid $gray-400;
+  font-size: 85%;
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .material-icons {
+      vertical-align: middle;
+    }
+  }
+}
