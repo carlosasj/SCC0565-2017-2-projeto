@@ -1,1 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./stylesheets/variables/variables";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./stylesheets/overrides/overrides";
