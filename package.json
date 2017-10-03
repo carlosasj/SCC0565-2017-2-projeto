@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "echo \"Por favor, selecione um ambiente\"",
     "build:local": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build",
-    "build:prod": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --prod -e prod",
+    "build:prod": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --prod -e prod --base-href /SCC0565-2017-2-projeto/",
     "lint": "ng lint"
   },
   "private": true,
