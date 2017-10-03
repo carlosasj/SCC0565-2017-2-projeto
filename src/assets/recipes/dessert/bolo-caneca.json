@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Bolo de Caneca",
+  "author": "Maria Karolina Eleuterio Cury Thomain",
+  "datePublished": "201-07-23",
+  
+  "image": "bolo-caneca.jpg",
+  "description": "Esse bolo é super fácil e prático. Perfeito pros dias que você não quer passar muito tempo cozinhando.",
+  "cookTime": "PT40M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "1 ovo",
+    "2 colheres (sopa) de achocolatado em pó",
+    "3 colheres (sopa) rasas de açúcar",
+    "4 colheres (sopa) rasas de farinha de trigo",
+    "1 colher (sopa) de óleo",
+    "1 colher (café) rasa de fermento em pó",
+    "4 colheres (sopa) de leite",
+    "2 colheres (sopa) de achocolatado em pó",
+    "1 colher (sopa) de margarina",
+    "1/2 xícara de leite"
+  ],
+   "recipeInstructions": [
+    "Coloque todos os ingredientes dentro de uma caneca de aproximadamente 300 ml ou mais",
+    "Mexa até obter uma massa homogênea e leve ao micro-ondas por 3 minutos",
+    "Calda: Coloque todos os ingredientes em uma panela, leve ao fogo médio e misture até obter uma consistência grossa",
+    "Despeje a calda sobre o bolo assim que retirá-lo do microondas"
+  ],
+
+  
+  "recipeYield": "14 porções",
+  }
+</script>

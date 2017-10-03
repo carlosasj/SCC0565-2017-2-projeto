@@ -38,6 +38,9 @@
     <form class="form-inline ml-0 ml-lg-3 my-2 my-lg-0" (ngSubmit)="onSearch()">
       <div class="input-group">
         <input class="form-control" type="text" name="search" id="search" [(ngModel)]="query" placeholder="Pesquisar" aria-label="Pesquisar">
+        <datalist id="Opcoes">
+          <option *ngFor="let option of search" [value]="option">{{option}}</option>        
+        </datalist>
         <span class="input-group-btn">
           <button class="btn btn-secondary icon-inside" type="submit"><i class="material-icons">search</i></button>
         </span>

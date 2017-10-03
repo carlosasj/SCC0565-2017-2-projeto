@@ -1,0 +1,58 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Paella Valenciana",
+  "author": "Igor Lawrence",
+  "datePublished": "2016-04-06",
+  
+  "image": "paella.jpg",
+  "description": "Uma refeição dos deuses dos mares, simples, rápido e maravilhoso.",
+  "cookTime": "PT150M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "1/2 kg de frango",
+    "1 kg de polvo",
+    "1 kg de lula",
+    "2 kg de mexilhão",
+    "1/2 kg de camarão médio",
+    "1/2 kg de arroz parboilizado",
+    "2 unidades de cabeça de alho grande",
+    "3 unidades de tomate para molho",
+    "1 unidade de pimentão amarelo",
+    "Açafrão e sal a gosto",
+    "6 unidades de camarão grande ou lagostim grande",
+    "6 unidades de mexilhão com casca",
+    "1 unidade de pimentão vermelho",
+    "1 unidade de tomate"
+  ],
+  
+  "recipeInstructions":[
+
+    "Parte 1 (15 minutos):",
+    " Coloque a metade dos alhos para dourar no azeite.",
+    " Acrescente os frangos temperados. Cozinhe até dourar. Reserve o frango.",
+    " Em uma panela a parte cozinhar o mexilhão com casca e o camarão grande.",
+    " Parte 2 (25 minutos):",
+    " Coloque a metade dos alhos para dourar no azeite. Acrescente as lulas.",
+    " Cozinhe até dourar.",
+    " Parte 3 (45 minutos):",
+    " Acrescentar o polvo, frango e o mexilhão. Acrescentar água do camarão até cobrir os ingredientes.",
+    " Acrescentar o tomate e pimentão picados.",
+    " Deixar ferver até pegar gosto e ficar suculento.",
+    " Parte 4 (25 minutos):",
+    " Colocar água fria (3 de água para 1 de arroz) e alçafrão.",
+    " Colocar o arroz.",
+    " Espelhar o camarão médio.",
+    " Enfeitar a gosto.",
+    " Cobir com papel alumínio.",
+    " Parte 5(20 minutos):",
+    " Ferver água com sal.",
+    " Cozinhar os caramões grandes inteiros ou lagostim até ficarem avermelhados.",
+    " Cozinhar o mexilhão com casca." 
+  ],
+
+  "recipeYield": "6 porções",
+}
+</script>

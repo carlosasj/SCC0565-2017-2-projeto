@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Macarrão Shimeji",
+  "author": "Livia Martins",
+  "datePublished": "2013-09-08",
+  
+  "image": "macarrao-shimeji.jpg",
+  "description": "Melhor macarrão que você já comeu na vida, super adequado para o recebimento de amigos e família.",
+  "cookTime": "PT30M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "2 cebolas pequenas bem picadas",
+    "2 dentes de alho bem picados",
+    "3 colheres de sopa de manteiga",
+    "200 g de shimeji",
+    "100 ml de creme de leite",
+    "50 g de parmesão ralado",
+    "Shoyu a gosto",
+    "Sal a gosto",
+    "Salsinha e cebolinha a gosto",
+    "250 g de macarrão gravatinha ou farfalle"
+  ],
+  "recipeInstructions":
+  [
+    "Leve ao fogo uma panela com água, óleo e sal e deixe ferver, acrescente o macarrão e cozinhe até que fique al dente, escorra a água e reserve.",
+    " Em uma panela, derreta a manteiga, acrescente a cebola e o alho e deixe dourar, acrescente o shimeji, shoyu a gosto (bastante) e refogue por aproximadamente 5 minutos, ou até que esteja macio.",
+    " Apague o fogo e acrescente o creme de leite e coloque sal a gosto.",
+    " Misture o macarrão e o molho em uma travessa, salpique com salsinha e cebolinha, cubra com o parmesão ralado e leve ao forno por aproximadamente 15 minutos.",
+    "Sirva a seguir."
+  ],
+  "recipeYield": "2 porções",
+}
+</script>

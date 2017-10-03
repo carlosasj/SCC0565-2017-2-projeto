@@ -1,0 +1,67 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Beef Wellington",
+  "author": "Antonio Eduardo Assis Amorim",
+  "datePublished": "2013-01-15",
+  
+  "image": "beef-wellington.jpg",
+  "description": "Nada melhor que o beef wellington do famoso chef Ramsay.",
+  "cookTime": "PT120M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "400 g de champignon",
+    "5/4 de cebola picada",
+    "1 copo de água",
+    "5 dentes de alho",
+    "100 ml de leite",
+    "Sal a gosto",
+    "Pimenta-do-reino",
+    "1/2 xícara de azeite",
+    "400 g de filé mignon",
+    "400 g de massa folhada",
+    "150 g de presunto de parma",
+    "3 gemas batidas",
+    "Pimenta branca a gosto",
+    "Louro a gosto",
+    "Alecrim a gosto",
+    "1/2 xícara de vinho do porto",
+    "150 g de manteiga",
+    "Vinagre balsâmico a gosto"
+  ],
+  "recipeInstructions": [
+    "Purê de champignon:",
+    "Lave os cogumelos e bata no liquidificador até obter um creme bem liso",
+    "Refogue em uma panela a cebola no azeite, quando começar a ficar transparente adicione o alho até dourar",
+    "Acrescente o champignon a esse refogado e cozinhe até que comece a secar",
+    "Em geral este tempo fica em torno de 30 minutos",
+    "Quando estiver bem consistente e seco, acrescente o creme de leite, acerte o sal e a pimenta, deixe ferver e desligue o fogo",
+    "Reserve",
+    "Filé:",
+    "Tempere o filé dos dois lados com sal e pimenta",
+    "Aqueça bem uma frigideira com um fio de óleo (tem que estar muito quente mesmo) e rapidamente sele a carne (vá virando até que todos os lado estejam bem dourados)",
+    "Evite usar o garfo, se possível use uma pinça, para evitar furar a carne",
+    "Desligue o fogo",
+    "Feito isso, seque o filé mignon em um pano limpo ou papel toalha, enrole o filé no pano bem apertado e leve à geladeira para descansar por no mínimo 15 minutos",
+    "Em seguida procedemos a montagem do bife",
+    "Abra a massa folhada em cima de um papel filme até obter um retângulo grande (suficiente para enrolar o filé com folga)",
+    "Pincele com as gemas batidas e disponha as fatias de presunto de parma lado a lado até cobrir toda a massa",
+    "Disponha o purê de champignon sobre o presunto, formando uma camada com 1 cm de espessura, mas deixe uns 2 cm de cada lado para não vazar na hora de enrolar",
+    "Coloque o filé mignon no centro dessa massa",
+    "Com o auxílio do papel filme, enrole a massa sobre o filé",
+    "Feche as laterais e dobre para baixo",
+    "Leve-o à geladeira para descansar por mais 30 minutos",
+    "Retire da geladeira, ponha em uma assadeira untada com azeite, pincele com as gemas e leve ao forno pré-aquecido (180ºC) por aproximadamente 40 minutos (ou até que a massa esteja bem dourada)",
+    "Molho:",
+    "Na mesma panela em que foi feito o filé, coloque um fio de azeite e refogue a cebola e o alho",
+    "Misture as ervas a gosto",
+    "Amasse a pimenta com uma faca e junte ao refogado",
+    "Junte o vinagre balsâmico, o vinho do porto e deixe reduzir até quase secar",
+    "Adicione a manteiga e tempere com sal"
+  ],
+  
+  "recipeYield": "4 porções",
+  }
+</script>

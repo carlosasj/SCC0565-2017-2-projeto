@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Frango na Cerveja (Assado ou Frito)",
+  "author": "Fernando Caldeira",
+  "datePublished": "2013-06-01",
+  
+  "image": "frango-cerveja.jpg",
+  "description": "Nada melhor que uma cervejinha para acompanhar um frangão.",
+  "cookTime": "PT150M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "1 frango médio cortado em pedaços (2 kg) ou então coxas e sobre-coxas de frango",
+    "3 colheres de limão ou vinagre",
+    "6 dentes de alho picado",
+    "4 colheres de óleo",
+    "1 lata de cerveja (clara)",
+    "2 colheres de sopa de sal, uma pitada de pimenta do reino e tempero verde à gosto (cebolinha, salsinha)",
+    "1 cebola grande picada",
+    "Óleo caso for fritar, suficiente para isso"
+  ],
+  "recipeInstructions": [
+  "Tempere o frango com o sal, a pimenta do reino, o alho, os temperos verdes e o suco de limão ou vinagre, o óleo e a cebola",
+  "Deixe no tempero por uma hora ou mais na geladeira",
+  "Coloque os pedaços de frango numa assadeira ou refratário",
+  "Despeje os temperos por cima e a cerveja por último",
+  "A cerveja deve estar em temperatura ambiente",
+  "Leve ao forno médio pré - aquecido para assar até dourar",
+  "Dicas: Pode temperar o frango do mesmo modo acima e fritar, apenas acrescente para fritura uns 3 dedos de óleo numa panela. Nesse caso, coloque a cerveja junto com os demais temperos e pique o frango em pedaços pequenos para que fique bem frito por dentro. Cuide tanto assado como frito para que o frango fique bem cozido. Frango mal passado é muito desagradável."
+  ],
+  
+  "recipeYield": "5 porções",
+  }
+</script>

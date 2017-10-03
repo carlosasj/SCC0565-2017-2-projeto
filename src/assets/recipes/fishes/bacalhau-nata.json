@@ -1,0 +1,49 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Bacalhau com Natas - Original de Portugal",
+  "author": "Cristiane",
+  "datePublished": "2010-01-08",
+  
+  "image": "bacalhau-nata.jpg",
+  "description": "Um pouco de Portugal na sua mesa.",
+  "cookTime": "PT60M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "350 g de bacalhau dessalgado",
+	"125 ml de nata",
+	"125 ml leite",
+	"1/2 taça de vinho branco seco",
+	"2 batatas grandes cortadas em rodelas finas",
+	"4 colheres (sopa) de azeite",
+	"1 cebola média cortada em meia lua",
+	"2 dentes de alho triturados",
+	"2 colheres (sopa) de manteiga",
+	"3 colheres (sopa) cheias de farinha de trigo",
+	"50 g de parmesão ralado de boa qualidade",
+	"1 folha de louro",
+	"Noz moscada, pimenta-do-reino e sal a gosto"
+  ],
+  "recipeInstructions": [
+    "Coloque água em uma panela e leve ao fogo para ferver, acrescente uma pitada de sal e coloque as batatas em rodelas para pré-cozer por 5 minutos, não deixando ficar mole",
+	"Em seguida, escorra e passe pela água corrente para interromper o cozimento",
+	"Escorra bem e leve para fritar em óleo, fritando até começar a mudar de cor (não deixar dourar, ela deve ficar macia, mas consistente)",
+	"Seque sob papel toalha e reserve",
+	"Coloque o bacalhau em uma panela, cubra com água e deixar ferver por 10 a 15 minutos",
+	"Escorra o bacalhau e desfie grosseiramente, reservando a água",
+	"Em uma panela derreta a manteiga e vá acrescentando aos poucos o trigo, mexendo bem",
+	"Em seguida, acrescente aos poucos a água do cozimento do bacalhau até ficar uma consistência lisa e bem cremosa",
+	"Adicione aos poucos o leite, o vinho e por último a nata, incorporando bem",
+	"Acrescente a noz moscada, pimenta-do-reino e sal a gosto, e reserve",
+	"Em uma panela, frite no azeite a cebola, acrescente o alho e o louro",
+	"Em seguida, acrescente o bacalhau e refogue por 5 minutos",
+	"Retire o louro e acrescente metade do molho de nata, misturando bem",
+	"Em um pirex de aproximadamente 20 cm, pincele com azeite e faça uma 'cama' com as batatas, acrescente o bacalhau, despeje o restante do molho por cima e cubra com parmesão ralado",
+	"Em seguida, com o forno preaquecido a 220º C, leve o bacalhau para gratinar por aproximadamente 20 minutos"	
+	],
+  
+  "recipeYield": "2 porções",
+ }
+</script>

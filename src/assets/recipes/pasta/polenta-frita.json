@@ -1,0 +1,32 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Polenta Frita Crocante",
+  "author": "Janaína Mendonça",
+  "datePublished": "2010-06-10",
+  
+  "image": "polenta-frita.jpg",
+  "description": "Nada melhor que uma polenta frita crocante e quentinha.",
+  "cookTime": "PT45M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "2 xícaras de fubá mimoso",
+    "4 colheres de sopa de óleo",
+    "1 litro de água fervente",
+    "1/2 colher de sopa de sal",
+    "3 dentes de alho amassados",
+    "1 cebola pequena ralada"
+  ],
+   "recipeInstructions":
+   [
+      "Dissolva o fubá em 2 copos de água fria, leve a panela em fogo médio e adicione o óleo, cebola, alho e o sal",
+      "Mexa bem até dourar",
+      "Em seguida acrescente o fubá já diluído (na água toda), mexendo de preferência com uma colher de pau por mais ou menos 15 minutos, até obter uma consistência bem firme na polenta",
+      "Despeje em uma travessa e deixe esfriar, corte em pedaços, passe no fubá (com os pedaços ainda mornos) e frite em óleo bem quente"
+    ],
+  
+  "recipeYield": "6 porções",
+}
+</script>

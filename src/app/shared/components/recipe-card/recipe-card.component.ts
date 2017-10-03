@@ -9,6 +9,7 @@ export class RecipeCardComponent implements OnInit {
   @Input() recipeTitle: string;
   @Input() img: string;
   @Input() abstract: string;
+  @Input() author: string;
   @Input() submitDate: string|number|Date;
 
   constructor() { }

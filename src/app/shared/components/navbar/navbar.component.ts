@@ -10,6 +10,8 @@ export class NavbarComponent implements OnInit {
   public isCollapsed = true;
   public query = '';
 
+  search = ['Frango com Mel','Frango na Cerveja', 'Frango com Gengibre, Salsão e Maçã', 'Abacaxi com Creme de Leite Condensado', 'Trufa Cremosa de Café', 'Bacalhau com Natas', 'Estrogonofe de Camarão', 'Lagostim à Moda', 'Paella Valenciana', 'Beef Wellington', 'Carne Louca de Festa', 'Picanha ao Molho de Mostarda', 'Batata Rosti', 'Macarrão Shimeji', 'Polenta Frita Crocante'];
+
   constructor(
     private router: Router,
   ) { }

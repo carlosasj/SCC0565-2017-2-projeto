@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Picanha ao Molho de Mostarda",
+  "author": "Marcello Navega",
+  "datePublished": "2008-12-21",
+  
+  "image": "picanhona.jpg",
+  "description": "Picanha suculenta ao molho de mostarda.",
+  "cookTime": "PT20M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "1 peça de picanha cortada em fatias",
+    "2 bisnagas de mostarda amarela",
+    "4 colheres de sopa de molho de alho (daqueles líquidos que vendem no mercado)",
+    "2 colheres de sopa de azeite",
+    "200 g de sal grosso",
+    "Orégano (somente para salpicar no molho)"
+  ],
+
+   "recipeInstructions":
+   [
+    "Coloque em uma vasilha os dois potes de mostarda, o molho de alho, o azeite e o sal grosso.",
+    "Misture bem com um garfo, para que todos os ingredientes se tornem um molho só.",
+    " Salpique um pouco de orégano no molho e misture mais um pouco.",
+    " A picanha já deverá estar cortada em bifes e sem tempero.",
+    "Pegue os bifes de picanha e lambuze no molho, até que o bife fique amarelo dos dois lados.",
+    "Quando o bife estiver totalmente coberto pelo molho, retire-o da vasilha, e coloque-o diretamente na grelha da churrasqueira para assar.",
+    " Repita a operação bife a bife, ou seja, labuze os dois lados e coloque na grelha para assar.",
+    " Obs.: Não se preocupem. A aparência é meio estranha (bifes amarelos na churrasqueira), e a primeira impressão é de que o gosto de mostarda será muito forte, porém conforme a picanha vai assando, ela retorna a coloração normal. O gostinho de mostarda penetra de leve na carne, deixando a picanha com um gostinho especial e muito suculenta. Não fica forte."
+  ],
+  
+  "recipeYield": "6 porções",
+}
+</script>
