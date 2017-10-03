@@ -1,3 +1,40 @@
-<p>
-  Você pesquisou por <code>{{query}}</code>
-</p>
+<div class="row">
+  <div class="col-12">
+    <h5>Resultado da busca por:</h5>
+    <h4>{{query}}</h4>
+    <hr>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <app-recipe-card recipeTitle="Bolo de caneca"
+                          img="http://www.cenadietetica.com/wp-content/uploads/2016/11/7d861ca14e7afdbae183dd890492d839-863x500.jpg"
+                          abstract="Esse bolo é super fácil e prático. Perfeito pros dias que você não quer passar muito tempo cozinhando."
+                          [submitDate]="1506697722296"
+        ></app-recipe-card>
+      </div>
+      <div class="col-12 col-md-6">
+        <app-recipe-card recipeTitle="Pizza de pão de forma"
+                          img="https://jasfi.com.br/wp-content/uploads/2017/08/Brincos-inspirados-em-comida.jpg"
+                          abstract="Pizza é bom. Se ficar pronto em pouco tempo então é uma delícia!"
+                          [submitDate]="1506797732296"
+        ></app-recipe-card>
+      </div>
+      <div class="col-12 col-md-6">
+        <app-recipe-card recipeTitle="Miojo"
+                          img="https://static.tuasaude.com/media/article/bb/dc/miojo-faz-mal_21725_l.jpg"
+                          abstract="Macarrão instantâneo comprado. Se você chegou até aqui procurando por isso, provavelmente está muito desesperado."
+                          [submitDate]="1506897742296"
+        ></app-recipe-card>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <app-recipe-card recipeTitle="'Aquele' hambúrguer"
+                          img="https://www.mcdonalds.com/content/dam/usa/documents/newbigmac/newbigmac1m.jpg"
+                          abstract="Dois hambúrgueres, alface, queijo, molho especial, cebola, picles e um pão com gergelim"
+                          [submitDate]="1506997742296"
+        ></app-recipe-card>
+      </div>
+    </div>
+
+  </div>
+</div>
