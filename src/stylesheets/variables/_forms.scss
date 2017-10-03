@@ -13,7 +13,7 @@
 // $input-border-radius-sm:         $border-radius-sm !default;
 
 // $input-focus-bg:                 $input-bg !default;
-// $input-focus-border-color:       lighten(theme-color("primary"), 25%) !default;
+$input-focus-border-color:       darken(theme-color("secondary"), 25%) !default;
 // $input-focus-box-shadow:         $input-box-shadow, $btn-focus-box-shadow !default;
 // $input-focus-color:              $input-color !default;
 

@@ -1,11 +1,9 @@
 body {
-  background-color: #FFF8F0;
-
   > app-root > ng-component {
     margin-top: 76px;
     display: flex;
     flex-direction: column;
-    min-height: calc( 100vh - 56px);
+    min-height: calc( 100vh - 76px);
 
     main {
       flex: 1 0 auto;

@@ -1,6 +1,7 @@
-.input-group .input-group-btn .btn.icon-inside {
-  padding-top: .25rem;
-  padding-bottom: .25rem;
+.btn.icon-inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {
