@@ -1,14 +1,16 @@
 .rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-  }
-  .rating > span {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+
+  > span {
     display: inline-block;
     position: relative;
     width: 1.1em;
+
+    &:hover:before,
+    &:hover ~ span:before {
+      content: "\2605";
+      position: absolute;
+    }
   }
-  .rating > span:hover:before,
-  .rating > span:hover ~ span:before {
-     content: "\2605";
-     position: absolute;
-  }
+}

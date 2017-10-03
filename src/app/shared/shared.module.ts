@@ -9,6 +9,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { TopRecipesComponent } from './components/top-recipes/top-recipes.component';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     FooterComponent,
     RecipeCardComponent,
+    TopRecipesComponent,
   ],
   exports: [
     MomentPipe,
@@ -30,6 +32,7 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     FooterComponent,
     RecipeCardComponent,
+    TopRecipesComponent,
     NgbModule,
   ],
   providers: [
