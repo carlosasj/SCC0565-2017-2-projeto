@@ -7,6 +7,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { ContentComponent } from './content.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
+import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 
 export const appRoutes: Routes = [
   {
@@ -36,6 +37,10 @@ export const appRoutes: Routes = [
       {
         path: 'cadastro',
         component: SignupComponent,
+      },
+      {
+        path: 'detalhes/:id',
+        component: RecipeDetailsComponent
       }
     ]
   },

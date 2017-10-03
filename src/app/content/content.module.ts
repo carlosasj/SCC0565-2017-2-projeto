@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { SendRecipeComponent } from './send-recipe/send-recipe.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { SignupComponent } from './signup/signup.component';
+import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { SignupComponent } from './signup/signup.component';
     SendRecipeComponent,
     SearchResultsComponent,
     SignupComponent,
+    RecipeDetailsComponent,
   ],
   exports: [
     ContentComponent,
