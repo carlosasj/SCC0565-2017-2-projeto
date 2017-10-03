@@ -1,3 +1,5 @@
+@import "../../../../stylesheets/variables/variables";
+
 .card-img-top-placeholder {
   width: 100%;
   background-size: cover;
@@ -14,4 +16,14 @@
     display: table;
     clear: both;
   }
+}
+
+a,
+a:hover {
+  color: $body-color;
+  text-decoration: none;
+}
+
+a.card:hover {
+  box-shadow: 0 2px 2px $gray-300;
 }

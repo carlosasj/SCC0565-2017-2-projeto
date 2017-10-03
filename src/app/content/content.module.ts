@@ -14,6 +14,7 @@ import { SendRecipeComponent } from './send-recipe/send-recipe.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { SignupComponent } from './signup/signup.component';
 import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
+import { CategoryDetailsComponent } from './category-details/category-details.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { RecipeDetailsComponent } from './recipe-details/recipe-details.componen
     SearchResultsComponent,
     SignupComponent,
     RecipeDetailsComponent,
+    CategoryDetailsComponent,
   ],
   exports: [
     ContentComponent,
