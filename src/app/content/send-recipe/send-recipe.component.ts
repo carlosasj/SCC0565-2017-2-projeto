@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SendRecipeComponent implements OnInit {
     // TODO Isso vai ser pego de um serviço
-    categories = ['Sobremesa', 'Salada', 'Prato Principal', 'Entrada'];
+    categories = ['Sobremesa', 'Massas', 'Carnes', 'Peixes e Frutos do Mar'];
     constructor() { }
 
     ngOnInit() {
