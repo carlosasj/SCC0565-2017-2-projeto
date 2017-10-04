@@ -1,0 +1,39 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Frango com Gengibre, Salsão e Maçã",
+  "author": "Rafaela Milanez",
+  "datePublished": "2007-02-12",
+  
+  "image": "frango-fruta.jpg",
+  "description": "Frango exótico com maçã, o que acha?",
+  "cookTime": "PT35M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "1 colher (sopa) de creme vegetal doriana light",
+    "1/2 cebola picada",
+    "2 colheres (chá) de gengibre ralado",
+    "1/2 kg de filé de frango cortado em cubos médios",
+    "1/2 xícara (chá) de vinho branco seco",
+    "1/2 xícara (chá) de água",
+    "1/2 xícara (chá) de salsão picado",
+    "1 maçã verde grande, com casca picada",
+    "1 xícara (chá) de maionese hellmann's light"
+  ],
+  "recipeInstructions": [
+  "Em uma panela média, derreta o creme vegetal doriana light e refogue a cebola e o gengibre por 1 minuto",
+  "Acrescente o frango e refogue até dourar",
+  "Junte o vinho branco e a água",
+  "Cozinhe em fogo médio por 10 minutos ou até ficar macio",
+  "Adicione o salsão e a maçã",
+  "Cozinhe por mais 5 minutos, mexendo de vez em quando",
+  "Adicione a maionese hellmann's light e misture",
+  "Sirva em seguida",
+  "Variação: Se preferir, substitua o salsão por alho-poró. Dica: Sirva com arroz branco e salada verde."
+  ],
+  
+  "recipeYield": "4 porções",
+  }
+</script>

@@ -1,0 +1,39 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Trufa Cremosa de Café",
+  "author": "Geisa Silva",
+  "datePublished": "2016-12-11",
+  
+  "image": "trufa-cafe.jpg",
+  "description": "Trufa gourmet elegante e sensacional.",
+  "cookTime": "PT30M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "4 colheres (sopa) de pó de CAFÉ PILÃO PREMIUM (80 g)",
+    "1 xícara (chá) de água quente",
+    "400 g de chocolate branco picado",
+    "1 colher (sopa) de manteiga sem sal",
+    "1 colher (sopa) de glucose de milho",
+    "400 g de chocolate ao leite picado",
+    "Cerejas para decorar"
+  ],
+  "recipeInstructions":
+  [
+    "Prepare o CAFÉ PILÃO com a água indicada.",
+     "Coloque numa tigela refratária, junte o chocolate branco e leve ao micro-ondas por 2 minutos, potência média, para dissolvê-lo.",
+     " Acrescente a manteiga e a glucose, misturando bem. Leve à geladeira para esfriar e encorpar, por cerca de 4 horas.",
+     "Depois, bata este creme na batedeira para obter uma trufa cremosa.",
+     " Em um outro refratário derreta o chocolate ao leite no micro-ondas, também por 2 minutos.",
+     " Misture e deixe esfriar.",
+     " Em seguida, coloque em fôrmas de copinho preenchendo e retirando o excesso de chocolate deixando-as ocas.",
+     " Leve à geladeira para secar e desenforme somente quando o fundo estiver esbranquiçado.",
+     " Recheie os copinhos com a trufa cremosa, decore com cereja e mantenha em geladeira até o momento de servir.",
+     " Dicas: Fôrmas de copinho podem ser encontradas em lojas de artigos para festas. Também podem ser utilizados copinhos plásticos descartáveis de café ou forminhas aluminizadas para docinhos"
+  ],
+  
+  "recipeYield": "20 porções",
+  }
+</script>

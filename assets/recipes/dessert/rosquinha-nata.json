@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Rosquinha de Nata",
+  "author": "Tereza Cristina da Silva",
+  "datePublished": "2014-05-20",
+  
+  "image": "rosquinha-nata.jpg",
+  "description": "Rosquinhas super fofas, crocantes e saborosas.",
+  "cookTime": "PT40M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "2 copo (americano) de nata",
+    "1 colher de sopa de manteiga",
+    "1 ½ xícara chá de açúcar",
+    "1 pitada de sal",
+    "1  ovo", 
+    "2 colher de sopa de fermento em pó para bolo",
+    "Farinha de trigo até o ponto de enrolar",
+    "1 prato com açúcar cristal para passar um dos lado das rosquinhas"
+  ],
+   "recipeInstructions": [
+     "Em uma tigela adicione a nata, a manteiga, o açúcar, e o ovo, misture bem até o açúcar dissolver.",
+     " Em seguida adicione o sal, o fermento e por último acrescente a farinha de trigo aos poucos, sovando bem com a mão, até que a massa solte da mão e esteja no ponto de enrolar.",
+     " Pegue pequenas porções da massa e enrole no formato de bolinha, depois no formato de canudinho e trance a rosquinha.",
+     " Assim que trançar passe um lado da rosquinha em um prato com açúcar, coloque em uma fôrma untada com óleo, com o lado do açúcar para cima.",
+     " Leve para assar em forno médio até dourar. Retire as rosquinha ainda quente pois se esfriar elas grudam na fôrma, utilize uma espátula para facilitar.",
+     " Depois de fria guarde em potes com tampa elas duram 15 dias se bem conservadas.",
+     "Dica: utilizei nata caseira, quando ferver o leite espere esfriar e retire a nata que fica por cima coloque em um pote plástico e guarde no congelador até juntar a quantidade desejada. Antes de fazer as rosquinha descongele bem a nata. Não precisa untar a mão para enrolar as rosquinhas. Enrole as rosquinha iguais para evitar que umas asse primeiro que as outras. Se preferir enrole igual nhoque e corte os quadradinhos. Se desejar abra a massa com um rolo, corte em círculos e recheio com geléia de goiabada aperte bem a massa para fechar."
+ ],
+  
+  "recipeYield": "14 porções",
+  }
+</script>

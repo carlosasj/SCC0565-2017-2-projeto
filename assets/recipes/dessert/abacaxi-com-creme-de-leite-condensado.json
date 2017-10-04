@@ -1,0 +1,35 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Abacaxi com Creme de Leite Condensado",
+  "author": "Rosaura Fraga",
+  "datePublished": "2007-10-07",
+  
+  "image": "abacaxi-com-creme-de-leite-condensado.jpg",
+  "description": "Essa tortinha de abacaxi com creme de leite condensado é maravilhosa, vale a pena conferir!",
+  "cookTime": "PT1H", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "1 lata de abacaxi escorrida ou 1 abacaxi natural (sem o talo) e picado",
+    "1 lata de leite condensado",
+    "2 gemas",
+    "1/2 xícara de leite"
+    "4 claras"
+    "12 colheres de sopa de açúcar"
+  ],
+  "recipeInstructions":[
+     "Leve ao fogo as gemas peneiradas com o leite e o leite condensado, mexa em fogo baixo até engrossar e reserve.",
+     "Misture muito bem as claras com o açúcar e leve ao fogo baixo, mexendo sempre (é só para amornar, mas tem que ser muito rápido, pois a clara fica líquida)",
+     "Bata imediatamente na batedeira, até encorpar e virar um merengue.",
+     "Monte um refratário untado com camada de abacaxi, creme belga e o merengue.",
+     " Leve ao forno bem quente, por aproximadamente 5 minutos, só para dourar o merengue.",
+     " Sirva quente ou frio. "
+ ],
+  
+  "recipeYield": "8 porções",
+
+  "prepTime": " PT30M"  
+}
+</script>

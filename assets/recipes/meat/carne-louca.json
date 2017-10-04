@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Carne Louca de Festa",
+  "author": "Márcia Mendes",
+  "datePublished": "2015-03-28",
+  
+  "image": "carne-louca.jpg",
+  "description": "Descubra as loucuras escondidas nessa carne.",
+  "cookTime": "PT60M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "1 kg de miolo de acém",
+	"3 caldos de carne",
+	"2 colheres (sopa) de azeite",
+	"1 pimentão vermelho",
+	"1 pimentão verde",
+	"1 cebola grande",
+	"1 dente de alho",
+	"2 latas de molho de tomate pronto"
+  ],
+  "recipeInstructions": [
+    "Cozinhe a carne com os caldos, na pressão por 1 hora",
+  	"Desfie a carne e reserve a água do cozimento",
+  	"Coloque na panela o azeite (se não tiver pode ser óleo mesmo)",
+  	"Refogue a cebola e o alho",
+  	"Acrescente os pimentões picadinhos e refogue bem até murchar",
+  	"Coloque a carne desfiada e o molho de tomate misture tudo e adicione a água do cozimento reservada",
+  	"Verifique se está bom de sal e deixe ferver bem até apurar o molho",
+  	"Essa receita dá para fazer uns 80 lanchinhos, rende muito Se a festa for para mais convidados é só dobrar a receita. Como o pimentão é um pouco indigesto, aconselho antes de refogar, adicionar água fervendo e deixar de molho uns 5 minutinhos. Deixando a carne na pressão por 1 hora você nem vai ter trabalho para desfiar"
+  ],
+  
+  "recipeYield": "8 porções",
+ }
+</script>

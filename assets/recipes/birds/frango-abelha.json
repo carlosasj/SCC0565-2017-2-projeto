@@ -1,0 +1,41 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Frango com Mel",
+  "author": "Luisa Cordélia Soalheiro",
+  "datePublished": "2011-10-22",
+  
+  "image": "frango-abelha.jpg",
+  "description": "Frango trabalhado no mel das abelhas. Isso sim que é frango ao mel real.",
+  "cookTime": "PT90M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "1,5 kg de coxas e sobrecoxas ou frango inteiro cortado em pedaços",
+    "5 colheres de sopa de mel",
+    "4 batatas",
+    "2 chuchus",
+    "2 cenouras",
+    "2 cebolas grandes",
+    "Sal a gosto",
+    "4 dentes de alho",
+    "1 limão",
+    "2 ramos de alecrim",
+    "1,5 litro de água quente"
+  ],
+  "recipeInstructions": [
+    "Tempere o frango com sal, 2 dentes de alho amassados, o caldo de limão e o alecrim",
+    "Deixe que o tempero penetre na carne por 2 horas",
+    "Coloque o mel para aquecer em uma panela (na de barro fica melhor, mas pode ser qualquer uma)",
+    "Coloque os pedaços de frango no mel e vá misturando até que o frango fique bem dourado",
+    "Quando estiver bem dourado coloque a água e deixe cozinhar por meia hora",
+    "Acrescente os legumes cortados em pedaços grandes na seguinte ordem chuchu, cenoura, batata e por último as cebolas cortadas em quatro partes",
+    "Os legumes devem ficar al dente",
+    "Assim que estiverem cozidos desligue o fogo e salpique cebolinha verde cortada miudinha",
+    "Fica muito bom com galinha caipira, mas tem que aumentar o tempo de cozimento da carne"
+  ],
+  
+  "recipeYield": "6 porções",
+  }
+</script>

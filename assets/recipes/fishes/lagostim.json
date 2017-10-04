@@ -1,0 +1,39 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Lagostim à Moda",
+  "author": "Guto Giordano",
+  "datePublished": "2017-01-17",
+  
+  "image": "lagostim.jpg",
+  "description": "Tudo de bom!!!",
+  "cookTime": "PT90M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "10 lagostins limpos (700 g)",
+	"vinho tinto seco",
+	"cebola média",
+	"1/2 tomate",
+	"folhas manjericão",
+	"salsinha",
+	"cebolinha de cheiro",
+	"suco de 2 limões",
+	"mel",
+	"azeite",
+	"sal"
+  ],
+  "recipeInstructions": [
+	"Em uma vasilha misture o sal, azeite, o suco de limões e o vinho",
+	"Pique o tomate, a cebola e acrescente a mistura",
+	"Adicione a cebolinha, a salsinha, o manjericão e misture para formar um molho",
+	"Coloque as lagostins no molho e deixe por uma hora para pegar um gosto",
+	"Eu fiz no grill, então fiz uma 'vasilha' com papel alumínio e despejei todo molho com os lagostins",
+	"Feche bem o embrulho e leve no grill por mais ou menos 30 minutos (como se fosse banho-maria)",
+	"Sirva com arroz e aproveite o molho"
+  ],
+  
+  "recipeYield": "2 porções",
+ }
+</script>

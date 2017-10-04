@@ -1,0 +1,43 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org", // Sempre igual
+  "@type": "Recipe", // Sempre igual
+  
+  "name": "Batata Rosti",
+  "author": "Fabi Gomes",
+  "datePublished": "2014-10-27",
+  
+  "image": "batata-rosti.jpg",
+  "description": "Batata rosti deliciosamente saborosa.",
+  "cookTime": "PT40M", // formato `PT{tempo.horas}H{tempo.minutos}M`
+  
+  "recipeIngredient": [
+    "1/2 colher (sopa) de requeijão",
+    "queijo a gosto (mussarela, provolone ou queijo minas)",
+    "sal a gosto",
+    "orégano a gosto",
+    "2 batatas médias",
+    "1 colher (sopa) de margarina"
+  ],
+  "recipeInstructions":
+  [
+  "Descasque as batatas e cozinhe-as na panela de pressão por 5 minutos.",
+  " As batatas não podem cozinhar muito, devem ficar bem durinhas para facilitar na hora de ralar e para ficar crocante.",
+  " Escorra a água e leve as batatas ao congelador por 15 minutos.",
+  " Rale as batatas no lado do ralador que possui formato de gotas.",
+  " Coloque a metade da margarina em uma frigideira e deixe derreter.",
+  " Adicione metade das batatas cobrindo o fundo da frigideira.",
+  " Acrescente o recheio.",
+  " Coloque o requeijão no centro, pois ele se espalha com o calor.",
+  " Coloque a outra metade das batatas por cima do recheio.",
+  " Quando a parte de baixo da batata estiver douradinha e soltando do fundo, vire com a ajuda de um prato.",
+  " Adicione a outra metade da margarina.",
+  " Retorne com a batata para frigideira para que o outro lado também doure.",
+  " Sirva quente.",
+  " Combina com arroz branco ou pode ser consumido como prato único.",
+  " O recheio pode ser alterado a gosto, por carne bovina cozida, frango desfiado, carne moída"
+  ],
+
+  "recipeYield": "1 porção",
+}
+</script>
