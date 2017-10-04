@@ -25,7 +25,7 @@
                 <div class="form-group row">
                     <label for="state" class="col-sm-2 col-md-3 col-form-label">Estado</label>
                     <div class="col-sm-10 col-md-9">
-                        <select class="custom-select form-control" id="state" required>
+                        <select class="form-control" id="state" required>
                             <option selected>Estado</option>
                             <option *ngFor="let state of states" [value]="state.name">{{state.name}}</option>
                         </select>
@@ -51,7 +51,7 @@
                             Deve conter pelo menos 1 letra maiúscula, 1 caractere especial, 1 digito e 1 letra minúscula.
                         </small>
                     </div>
-                        
+
                 </div>
                 <div class="form-group row">
                     <label for="password-verification" class="col-sm-2 col-md-3 col-form-label">Confirmação de senha</label>
