@@ -7,6 +7,7 @@ _urlpatterns = [
     url(r'^(?P<pk>[0-9]+)/$', views.RecipeDetail.as_view()),
     url(r'^category/$', views.CategoryListCreate.as_view()),
     url(r'^category/(?P<pk>[0-9]+)/$', views.CategoryDetail.as_view()),
+    url(r'^home/$', views.HomeList.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(_urlpatterns)

@@ -1,6 +1,6 @@
 from .models import Recipe, Category
 from .serializers import (RecipeSerializer, RecipeCompleteSerializer,
-                          CategorySerializer)
+                          CategorySerializer, CategoryLimitterSerializer)
 from rest_framework import generics, permissions, pagination, viewsets
 from django_filters.rest_framework import DjangoFilterBackend
 from django.db.models import F
@@ -53,3 +53,8 @@ class CategoryDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     permission_classes = (IsAdminOrReadOnly,)
+
+
+class HomeList(generics.ListAPIView):
+    queryset = Category.objects.all()
+    serializer_class = CategoryLimitterSerializer

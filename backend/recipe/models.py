@@ -19,6 +19,9 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    def recipes_limit_3(self):
+        return self.recipe_set.order_by('publish_date')[:3]
+
 
 class Ingredient(models.Model):
     name = models.CharField(
