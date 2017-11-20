@@ -3,6 +3,7 @@ import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -21,6 +22,7 @@ import { AppComponent } from './app.component';
     NgbModule.forRoot(),
     ContentModule,
     SharedModule,
+    HttpModule,
   ],
   providers: [
   ],
