@@ -1,7 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
 import { RecipesService } from './../../shared/services/recipes.service';
 import { Recipe } from './../../models/recipe';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Inject } from '@angular/core';
 import { ɵgetDOM, ɵDomAdapter, DOCUMENT } from '@angular/platform-browser';
 
@@ -12,7 +12,7 @@ import { ɵgetDOM, ɵDomAdapter, DOCUMENT } from '@angular/platform-browser';
   templateUrl: './recipe-details.component.html',
   styleUrls: ['./recipe-details.component.scss']
 })
-export class RecipeDetailsComponent implements OnInit {
+export class RecipeDetailsComponent implements OnInit, OnDestroy {
   public recipe: Recipe;
   private dom: ɵDomAdapter;
 
@@ -72,7 +72,14 @@ export class RecipeDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.setJsonLD(this.recipe);
+  }
 
+  ngOnDestroy() {
+    const script = document.querySelector('script[type="application/ld+json"]');
+    if (script) {
+      script.remove();
+    }
   }
 
 }
