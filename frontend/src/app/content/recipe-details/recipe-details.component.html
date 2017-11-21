@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-12 col-lg-9">
-        <div class="page-panel">
+        <div class="page-panel" *ngIf="recipe">
             <h4>{{recipe.name}}</h4>
             <small id="author" class="text-muted">
                 por {{recipe.author.full_name}}
@@ -42,9 +42,7 @@
             <hr>
             <h5 class="text-center">Instruções de Preparo</h5>
             <div class="row">
-                <div class="col-sm-12">
-                    {{recipe.instructions}}
-                </div>
+                <div class="col-sm-12" [innerHTML]="recipe.instructions | enterToBr | sanitize"></div>
             </div>
         </div>
     </div>

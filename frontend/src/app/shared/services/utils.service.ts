@@ -29,7 +29,6 @@ export class UtilsService {
   }
 
   static endpoint(path: string): string {
-    console.log(environment.baseUrl + path);
     return environment.baseUrl + path;
   }
 

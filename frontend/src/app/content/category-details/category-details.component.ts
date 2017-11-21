@@ -9,19 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryDetailsComponent implements OnInit {
   public recipes;
+  public category;
   constructor(
     private recipesService: RecipesService,
     private route: ActivatedRoute,
   ) {
-      const id = this.route.snapshot.paramMap.get('id');
-      recipesService.getRecipesByCategory(id)
-        .subscribe(res => {
-          this.recipes = res;
-        });
+    const id = this.route.snapshot.paramMap.get('id');
+    recipesService.getRecipesByCategory(id)
+      .subscribe(res => this.recipes = res);
+
+    recipesService.getCategoryById(id)
+      .subscribe(res => this.category = res);
   }
 
   ngOnInit() {
-    
+
   }
 
 }

@@ -14,12 +14,14 @@ export class RecipeDetailsComponent implements OnInit {
     private recipesService: RecipesService,
     private route: ActivatedRoute,
   ) {
-    const id = route.snapshot.paramMap.get('id');
-    recipesService.getRecipeById(+id)
-      .then(res => {
-        this.recipe = res;
-        console.log(this.recipe);
-      });
+
+    this.route.params.subscribe(params => {
+      const id = route.snapshot.paramMap.get('id');
+      recipesService.getRecipeById(+id)
+        .then(res => {
+          this.recipe = res;
+        });
+    });
   }
 
   ngOnInit() {
