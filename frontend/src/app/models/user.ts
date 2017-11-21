@@ -1,10 +1,9 @@
 import { UtilsService } from '@services';
-import { State } from './state';
-import { AngularFirestoreDocument, AngularFirestore } from 'angularfire2/firestore';
+import * as moment from 'moment';
 
 export class User {
-  fullName: string;
-  birthdate: number;
+  full_name: string;
+  birthday: string; // YYYY-MM-DD
   city: string;
   state: string;
   phone: string;
@@ -12,8 +11,8 @@ export class User {
 
   constructor(data?) {
     if (data) {
-      this.fullName = data.fullName;
-      this.birthdate = data.birthdate;
+      this.full_name = data.full_name;
+      this.birthday = data.birthday;
       this.city = data.city;
       this.phone = data.phone;
       this.email = data.email;
@@ -24,8 +23,9 @@ export class User {
 
   private getPureData(): any {
     return {
-      fullName:  this.fullName,
-      birthdate: this.birthdate,
+      full_name: this.full_name,
+      birthday:  this.birthday,
+      state:     this.state,
       city:      this.city,
       phone:     this.phone,
       email:     this.email,

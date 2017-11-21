@@ -3,17 +3,23 @@
         <div class="page-panel">
             <h5>Cadastro</h5>
             <hr>
+            <small *ngIf="errors.length" class="text-danger">
+                <ng-container *ngFor="let err of errors">{{err}}<br></ng-container>
+            </small>
+            <small *ngIf="success.length" class="text-success">
+                <ng-container *ngFor="let succ of success">{{succ}}<br></ng-container>
+            </small>
             <form (submit)="onSubmit()">
                 <div class="form-group row">
-                    <label for="fullName" class="col-sm-4 col-md-3 col-form-label">Nome Completo</label>
+                    <label for="full_name" class="col-sm-4 col-md-3 col-form-label">Nome Completo</label>
                     <div class="col-sm-8 col-md-9">
-                        <input type="text" class="form-control text-uppercase" id="fullName" name="fullName" [(ngModel)]="newUser.fullName" required>
+                        <input type="text" class="form-control text-uppercase" id="full_name" name="full_name" [(ngModel)]="newUser.full_name" required>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="birthdate" class="col-sm-4 col-md-3 col-form-label">Data de Nascimento</label>
+                    <label for="birthday" class="col-sm-4 col-md-3 col-form-label">Data de Nascimento</label>
                     <div class="col-sm-8 col-md-9">
-                        <input type="text" placeholder="DD/MM/AAAA" class="form-control" id="birthdate" name="birthdate" [(ngModel)]="newUser.birthdate" required>
+                        <input type="date" placeholder="DD/MM/AAAA" class="form-control" id="birthday" name="birthday" [(ngModel)]="newUser.birthday" required>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -27,7 +33,7 @@
                     <div class="col-sm-8 col-md-9">
                         <select class="form-control" id="state" name="state" [(ngModel)]="newUser.state" required>
                             <option selected hidden [value]="undefined">Escolha um Estado</option>
-                            <option *ngFor="let state of ( states | async)" [value]="state.id">{{state.name}}</option>
+                            <option *ngFor="let state of ( states | async)" [value]="state.value">{{state.display_name}}</option>
                         </select>
                     </div>
                 </div>
@@ -50,10 +56,10 @@
                         <small id="passwordHelpInline" class="text-muted">
                             Deve conter pelo menos:
                             <ul>
-                                <li [ngClass]="{'text-success': containsUpper(newUser.password)}">1 letra maiúscula</li>
-                                <li [ngClass]="{'text-success': containsLower(newUser.password)}">1 letra minúscula</li>
-                                <li [ngClass]="{'text-success': containsSpecial(newUser.password)}">1 caractere especial</li>
-                                <li [ngClass]="{'text-success': containsDigit(newUser.password)}">1 dígito</li>
+                                <li [ngClass]="{'text-success': containsUpper()}">1 letra maiúscula</li>
+                                <li [ngClass]="{'text-success': containsLower()}">1 letra minúscula</li>
+                                <li [ngClass]="{'text-success': containsSpecial()}">1 caractere especial</li>
+                                <li [ngClass]="{'text-success': containsDigit()}">1 dígito</li>
                             </ul>
                         </small>
                     </div>
@@ -66,7 +72,7 @@
                     </div>
                 </div>
                 <div class="float-right clearfix">
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <button type="submit" [disabled]="!isValid()" class="btn btn-primary">Cadastrar</button>
                 </div>
             </form>
         </div>
