@@ -13,4 +13,8 @@ export class RecipesService {
   public getRecipe() {
     return this.$http.get('http://127.0.0.1:8000/recipe').map(r => r.json()).toPromise();
   }
+
+  public getHomeRecipes() {
+    return this.$http.get('http://127.0.0.1:8000/recipe/home').map(r => r.json()).toPromise();
+  }
 }

@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  public categories;
   constructor(
     private recipesService: RecipesService,
   ) {
-    recipesService.getRecipe()
+    recipesService.getHomeRecipes()
       .then(res => {
         console.log(res);
-        
+        this.categories = res;
       });
   }
 
