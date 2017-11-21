@@ -20,7 +20,7 @@
            routerLink="/categorias"
            routerLinkActive="active">Categorias</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="getToken()">
         <a class="nav-link"
            (click)="isCollapsed = true"
            routerLink="/incluir-receita"
@@ -28,18 +28,23 @@
       </li>
     </ul>
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link"
+      <li class="nav-item" *ngIf="getToken(); else logout">
+        <a routerLink="/login" class="nav-link" (click)="doLogout()">Logout</a>
+      </li>
+      <ng-template #logout>
+        <li class="nav-item">
+          <a class="nav-link"
            (click)="isCollapsed = true"
            routerLink="/login"
            routerLinkActive="active">Login | Cadastre-se</a>
-      </li>
+        </li>
+      </ng-template>
     </ul>
     <form class="form-inline ml-0 ml-lg-3 my-2 my-lg-0" (ngSubmit)="onSearch()">
       <div class="input-group">
         <input class="form-control" type="text" name="search" id="search" [(ngModel)]="query" placeholder="Pesquisar" aria-label="Pesquisar">
         <datalist id="Opcoes">
-          <option *ngFor="let option of search" [value]="option">{{option}}</option>        
+          <option *ngFor="let option of search" [value]="option">{{option}}</option>
         </datalist>
         <span class="input-group-btn">
           <button class="btn btn-secondary icon-inside" type="submit"><i class="material-icons">search</i></button>
