@@ -9,52 +9,52 @@
                 <div class="form-group row">
                     <label for="author" class="col-sm-2 col-md-3 col-form-label">Autor</label>
                     <div class="col-sm-10 col-md-9">
-                        <input type="text" class="form-control uppercase" id="author" value="Érick Jacquin"  disabled required>
+                        <input type="text" class="form-control uppercase" id="author" [value]="author"  disabled required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="recipe-name" class="col-sm-2 col-md-3 col-form-label">Nome da receita</label>
                     <div class="col-sm-10 col-md-9">
-                        <input type="text" class="form-control" id="recipe-name" placeholder="Ex: Frango assado da vovó" required>
+                        <input type="text" name="recipe-name" class="form-control" id="recipe-name" placeholder="Ex: Frango assado da vovó" [(ngModel)]="recipe.name" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="description" class="col-sm-2 col-md-3 col-form-label">Descrição</label>
                     <div class="col-sm-10 col-md-9">
-                        <textarea class="form-control" id="description" rows="3" required></textarea>
+                        <textarea class="form-control" name="recipe-description" id="description" rows="3" [(ngModel)]="recipe.description" required></textarea>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="state" class="col-sm-2 col-md-3 col-form-label">Categoria</label>
                     <div class="col-sm-10 col-md-9">
-                        <select class="form-control" id="categories" required>
+                        <select name="recipe-category" class="form-control" id="categories" [(ngModel)]="recipe.category" required>
                             <option disabled selected>Selecione a Categoria</option>
-                            <option *ngFor="let category of categories" [value]="category">{{category}}</option>
+                            <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="ready-in-time" class="col-sm-2 col-md-3 col-form-label">Tempo de Preparo (em minutos)</label>
                     <div class="col-sm-10 col-md-9">
-                        <input type="number" class="form-control" id="ready-in-time" required>
+                        <input type="number" name="recipe-cooking-time" class="form-control" id="ready-in-time" [(ngModel)]="recipe.ready_in_time" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="portions-number" class="col-sm-2 col-md-3 col-form-label">Número de Porções</label>
                     <div class="col-sm-10 col-md-9">
-                        <input type="number" class="form-control" id="portions-number" required>
+                        <input type="number" name="recipe-portions" class="form-control" id="portions-number" [(ngModel)]="recipe.portions" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="cooking-method" class="col-sm-2 col-md-3 col-form-label">Método de Cozimento</label>
                     <div class="col-sm-10 col-md-9">
-                        <input type="text" class="form-control" id="cooking-method" placeholder="Cozido, Frito, etc." required>
+                        <input type="text" name="recipe-method" class="form-control" id="cooking-method" placeholder="Cozido, Frito, etc." [(ngModel)]="recipe.cooking_method" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="nutritional-info" class="col-sm-2 col-md-3 col-form-label">Valor Nutricional</label>
                     <div class="col-sm-10 col-md-9">
-                        <input type="text" class="form-control" id="nutritional-info" placeholder="Ex: 100kcal" required>
+                        <input type="text" name="recipe-nutrition" class="form-control" id="nutritional-info" placeholder="Ex: 100kcal" [(ngModel)]="recipe.nutritional_info" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -64,18 +64,18 @@
 
                 <h6>Ingredientes</h6>
                 <hr>
-                <div class="form-row">
+                <div class="form-row" *ngFor="let ingredient of recipe.ingredients; let i = index">
                     <div class="form-group col-12 col-md-6">
-                        <input type="text" class="form-control" placeholder="Ingrediente">
+                        <input type="text" name="ingredient-name-{{i}}" class="form-control" placeholder="Ingrediente" [(ngModel)]="recipe.ingredients[i].name">
                     </div>
                     <div class="form-group col-3 col-md-2">
-                        <input type="text" class="form-control" placeholder="Qtd">
+                        <input type="text" name="ingredient-qtd-{{i}}" class="form-control" placeholder="Qtd" [(ngModel)]="recipe.ingredients[i].quantity">
                     </div>
                     <div class="form-group col-7 col-md-3">
-                        <input type="text" class="form-control" placeholder="Unidade">
+                        <input type="text" name="ingredient-unit-{{i}}" class="form-control" placeholder="Unidade" [(ngModel)]="recipe.ingredients[i].unit">
                     </div>
                     <div class="form-group col-sm-2 col-md-1">
-                        <button type="button" class="btn btn-block btn-outline-primary">+</button>
+                        <button type="button" class="btn btn-block btn-outline-primary" (click)="addIngredient()" >+</button>
                     </div>
                 </div>
 
@@ -83,12 +83,12 @@
                 <hr>
                 <div class="form-group row">
                     <div class="col-sm-10 col-md-9">
-                        <textarea class="form-control" id="instructions" rows="10" required></textarea>
+                        <textarea class="form-control" name="recipe-instructions" id="instructions" rows="10" [(ngModel)]="recipe.instructions" required></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 clearfix">
-                        <button type="button" class="btn btn-primary">Cadastrar receita</button>
+                        <button type="button" class="btn btn-primary" (click)="sendRecipe()">Cadastrar receita</button>
                     </div>
                 </div>
             </form>

@@ -2,6 +2,7 @@ import { UtilsService } from '@services';
 import * as moment from 'moment';
 
 export class User {
+  id?: number;
   full_name: string;
   birthday: string; // YYYY-MM-DD
   city: string;

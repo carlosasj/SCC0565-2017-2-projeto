@@ -1,3 +1,4 @@
+import { RecipesService } from './../../shared/services/recipes.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent implements OnInit {
-
-  constructor() { }
+  public categories;
+  constructor(
+    private recipesService: RecipesService,
+  ) {
+    recipesService.getCategories()
+      .then(res => {
+        this.categories = res;
+      });
+  }
 
   ngOnInit() {
   }
