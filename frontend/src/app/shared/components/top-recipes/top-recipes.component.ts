@@ -1,3 +1,4 @@
+import { RecipesService } from './../../services/recipes.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './top-recipes.component.html',
 })
 export class TopRecipesComponent implements OnInit {
-
-  constructor() { }
+  public recipes;
+  constructor(
+    private recipesService: RecipesService,
+  ) {
+    recipesService.getMostViewedRecipes()
+    .then(res => {
+      this.recipes = res;
+    });
+  }
 
   ngOnInit() {
   }
