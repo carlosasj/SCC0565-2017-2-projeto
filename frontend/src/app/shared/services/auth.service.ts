@@ -40,6 +40,9 @@ export class AuthService {
   }
 
   public newUser(newUser: NewUser) {
+    return (this.$http.post(utils.endpoint('/account/user/'), newUser)
+            .map(r => r.json())
+    );
   }
 
 }
