@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TopRecipesComponent } from './components/top-recipes/top-recipes.component';
+import { EnterToBrPipe } from './pipes/enter-to-br.pipe';
+import { SanitizePipe } from './pipes/sanitize.pipe';
 
 @NgModule({
   imports: [
@@ -25,6 +27,8 @@ import { TopRecipesComponent } from './components/top-recipes/top-recipes.compon
     FooterComponent,
     RecipeCardComponent,
     TopRecipesComponent,
+    EnterToBrPipe,
+    SanitizePipe,
   ],
   exports: [
     MomentPipe,
@@ -34,6 +38,8 @@ import { TopRecipesComponent } from './components/top-recipes/top-recipes.compon
     RecipeCardComponent,
     TopRecipesComponent,
     NgbModule,
+    EnterToBrPipe,
+    SanitizePipe,
   ],
   providers: [
     RecipesService,
