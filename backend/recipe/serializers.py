@@ -29,7 +29,8 @@ class RecipeSerializer(serializers.ModelSerializer):
         model = Recipe
         fields = ('id', 'author', 'views', 'name', 'description', 'category',
                   'ready_in_time', 'portions', 'cooking_method',
-                  'nutritional_info', 'ingredients', 'instructions')
+                  'nutritional_info', 'ingredients', 'instructions',
+                  'publish_date')
 
     def create(self, validated_data):
         ingredients_data = validated_data.pop('ingredients')

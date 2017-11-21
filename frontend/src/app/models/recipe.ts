@@ -4,6 +4,7 @@ import { User } from './user';
 export class Recipe {
     id?: number;
     author: any;
+    publish_date: string;
     category: Category | number;
     ingredients: Array<Ingredient>;
     views: number;
