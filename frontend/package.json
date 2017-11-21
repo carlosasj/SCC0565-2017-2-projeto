@@ -22,9 +22,12 @@
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.5",
+    "angularfire2": "^5.0.0-rc.2",
     "bootstrap": "4.0.0-beta",
     "core-js": "^2.4.1",
+    "firebase": "^4.5.1",
     "moment": "^2.18.1",
+    "ng-http-interceptor": "^3.1.2",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },

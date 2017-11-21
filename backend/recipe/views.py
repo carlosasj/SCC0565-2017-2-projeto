@@ -3,6 +3,7 @@ from .serializers import (RecipeSerializer, RecipeCompleteSerializer,
                           CategorySerializer, CategoryLimitterSerializer)
 from rest_framework import generics, permissions, pagination, viewsets
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.filters import OrderingFilter, SearchFilter
 from django.db.models import F
 
 
@@ -18,11 +19,13 @@ class IsAdminOrReadOnly(permissions.BasePermission):
 
 class RecipeListCreate(viewsets.ModelViewSet):
     queryset = Recipe.objects.all()
-    filter_backends = (DjangoFilterBackend,)
+    filter_backends = (DjangoFilterBackend, OrderingFilter, SearchFilter)
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     search_fields = ('name', 'description', 'ingredients__name',
                      'category__name')
     pagination_class = pagination.LimitOffsetPagination
+    ordering_fields = ('views',)
+    filter_fields = ('category__id',)
 
     def get_serializer_class(self):
         if self.action == 'create':
@@ -38,7 +41,7 @@ class RecipeDetail(generics.RetrieveUpdateDestroyAPIView):
 
     def get(self, request, *args, **kwargs):
         obj: Recipe = self.get_object()
-        obj.views = F('count') + 1
+        obj.views = F('views') + 1
         obj.save()
         return super().get(request, *args, **kwargs)
 

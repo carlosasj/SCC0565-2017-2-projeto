@@ -1,9 +1,12 @@
+$navbar-total-height: 2*$navbar-padding-y + $nav-link-height + 2*$navbar-brand-padding-y;
+$space-after-navbar: $spacer;
+
 body {
   > app-root > ng-component {
-    margin-top: 76px;
+    margin-top: $navbar-total-height + $space-after-navbar;
     display: flex;
     flex-direction: column;
-    min-height: calc( 100vh - 76px);
+    min-height: calc( 100vh - #{$navbar-total-height + $space-after-navbar});
 
     main {
       flex: 1 0 auto;
