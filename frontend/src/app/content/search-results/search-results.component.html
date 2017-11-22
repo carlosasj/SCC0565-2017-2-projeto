@@ -5,33 +5,12 @@
     <hr>
 
     <div class="row">
-      <div class="col-12 col-md-6">
-        <app-recipe-card recipeTitle="Bolo de caneca"
+      <div *ngFor="let recipe of recipes" class="col-12 col-md-6">
+        <app-recipe-card [recipeTitle]="recipe.name"
                           img="assets/recipes/dessert/bolo-caneca.jpg"
-                          abstract="Esse bolo é super fácil e prático. Perfeito pros dias que você não quer passar muito tempo cozinhando."
+                          [abstract]="recipe.description"
+                          [id]="recipe.id"
                           [submitDate]="1506697722296"
-        ></app-recipe-card>
-      </div>
-      <div class="col-12 col-md-6">
-        <app-recipe-card recipeTitle="Pizza de pão de forma"
-                          img="assets/recipes/quick/pizza.jpg"
-                          abstract="Pizza é bom. Se ficar pronto em pouco tempo então é uma delícia!"
-                          [submitDate]="1506797732296"
-        ></app-recipe-card>
-      </div>
-      <div class="col-12 col-md-6">
-        <app-recipe-card recipeTitle="Miojo"
-                          img="assets/recipes/quick/miojo.jpg"
-                          abstract="Macarrão instantâneo comprado. Se você chegou até aqui procurando por isso, provavelmente está muito desesperado."
-                          [submitDate]="1506897742296"
-        ></app-recipe-card>
-      </div>
-
-      <div class="col-12 col-md-6">
-        <app-recipe-card recipeTitle="'Aquele' hambúrguer"
-                          img="assets/recipes/quick/mc.jpg"
-                          abstract="Dois hambúrgueres, alface, queijo, molho especial, cebola, picles e um pão com gergelim"
-                          [submitDate]="1506997742296"
         ></app-recipe-card>
       </div>
     </div>

@@ -2,6 +2,7 @@ import { AuthService } from './../../shared/services/auth.service';
 import { RecipesService } from './../../shared/services/recipes.service';
 import { Recipe } from './../../models/recipe';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     templateUrl: './send-recipe.component.html',
@@ -13,7 +14,8 @@ export class SendRecipeComponent implements OnInit {
     public categories = [];
     constructor(
         private recipesService: RecipesService,
-        private authService: AuthService
+        private authService: AuthService,
+        private router: Router,
     ) {
         this.recipe = new Recipe();
         this.recipe.ingredients.push({
@@ -44,8 +46,9 @@ export class SendRecipeComponent implements OnInit {
     public sendRecipe() {
         this.recipe.author = undefined;
         this.recipe.category = +this.recipe.category;
-        console.log(this.recipe);
-        this.recipesService.sendRecipe(this.recipe);
-        
+        this.recipesService.sendRecipe(this.recipe)
+            .then(res => {
+                this.router.navigate(['/']);
+            });
     }
 }

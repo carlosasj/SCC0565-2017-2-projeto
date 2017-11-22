@@ -8,8 +8,9 @@
         <app-recipe-card  [recipeTitle]="recipe.name"
                               img="assets/recipes/dessert/bolo-caneca.jpg"
                               [abstract]="recipe.description"
-                              [author]="'Por: ' + recipe.author.name"
+                              author="{{'Por: ' + recipe.author.full_name}}"
                               [submitDate]="1506877722296"
+                              [id]="recipe.id"
         ></app-recipe-card>
       </div>
     </div>

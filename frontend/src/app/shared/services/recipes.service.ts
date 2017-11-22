@@ -42,4 +42,8 @@ export class RecipesService {
   public sendRecipe(recipe: Recipe) {
     return this.$http.post(utils.endpoint('/recipe/'), recipe).map(r => r.json()).toPromise();
   }
+
+  public searchRecipe(query: string) {
+    return this.$http.get(utils.endpoint('/recipe/?search=' + query)).map(r => r.json()).toPromise();
+  }
 }
